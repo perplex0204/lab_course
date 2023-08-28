@@ -11,50 +11,26 @@
         <div class="m-2">
             <div class="container-fluid">
                 <div class="row align-items-start border" style="height: 100px;">
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
+                    <div class="col border border-primary"> One of three columns </div>
+                    <div class="col border border-primary"> One of three columns </div>
+                    <div class="col border border-primary"> One of three columns </div>
                 </div>
                 <div class="row align-items-center border" style="height: 100px;">
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
+                    <div class="col border border-primary"> One of three columns </div>
+                    <div class="col border border-primary"> One of three columns </div>
+                    <div class="col border border-primary"> One of three columns </div>
                 </div>
                 <div class="row align-items-end border" style="height: 100px;">
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col border border-primary">
-                        One of three columns
-                    </div>
+                    <div class="col border border-primary"> One of three columns </div>
+                    <div class="col border border-primary"> One of three columns </div>
+                    <div class="col border border-primary"> One of three columns </div>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row border" style="height: 100px;">
-                    <div class="col align-self-start border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col align-self-center border border-primary">
-                        One of three columns
-                    </div>
-                    <div class="col align-self-end border border-primary">
-                        One of three columns
-                    </div>
+                    <div class="col align-self-start border border-primary"> One of three columns </div>
+                    <div class="col align-self-center border border-primary"> One of three columns </div>
+                    <div class="col align-self-end border border-primary"> One of three columns </div>
                 </div>
             </div>
             <div v-highlight="'html'" class="border my-2 ps-4">

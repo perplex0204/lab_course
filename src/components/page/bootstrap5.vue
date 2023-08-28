@@ -13,13 +13,7 @@
             </div>
         </el-sub-menu>
         <el-menu-item index="2">安裝 Install</el-menu-item>
-        <el-sub-menu index="3">
-            <template #title>RWD網站設計</template>
-            <el-menu-item index="3-1">RWD Breakpoints</el-menu-item>
-            <el-menu-item index="3-2">網格系統與容器</el-menu-item>
-            <el-menu-item index="3-3">圖像</el-menu-item>
-            <el-menu-item index="3-4">隱藏與顯示</el-menu-item>
-        </el-sub-menu>
+        <el-menu-item index="3">RWD網站設計</el-menu-item>
         <el-sub-menu index="4">
             <template #title>排版 Layout</template>
             <el-menu-item index="4-1">容器 Containers</el-menu-item>
@@ -35,7 +29,6 @@
         <el-sub-menu index="6">
             <template #title>表單 Forms</template>
             <el-menu-item index="6-1">概覽 Overview</el-menu-item>
-            <el-menu-item index="6-2">驗證 Validation</el-menu-item>
         </el-sub-menu>
         <el-menu-item index="7">元件 Components</el-menu-item>
         <el-sub-menu index="8">
@@ -49,8 +42,6 @@
             <el-menu-item index="8-7">文字 Text</el-menu-item>
         </el-sub-menu>
         <el-menu-item index="9">Icons</el-menu-item>
-
-
         <!-- <el-sub-menu index=" 2">
             <template #title>Workspace</template>
             <el-menu-item index="2-1">item one</el-menu-item>
@@ -65,10 +56,15 @@
         </el-sub-menu> -->
     </el-menu>
     <install class="card m-2" v-if="activeIndex == '2'"></install>
-    <rwdBreakPoint class="card m-2" v-if="activeIndex == '3-1'"></rwdBreakPoint>
+    <rwdBreakPoint class="card m-2" v-if="activeIndex == '3'"></rwdBreakPoint>
     <layoutContainer class="card m-2" v-if="activeIndex == '4-1'"></layoutContainer>
     <layoutGrid class="card m-2" v-if="activeIndex == '4-2'"></layoutGrid>
     <layoutColumns class="card m-2" v-if="activeIndex == '4-3'"></layoutColumns>
+    <contentTypography class="card m-2" v-if="activeIndex == '5-1'"></contentTypography>
+    <contentTables class="card m-2" v-if="activeIndex == '5-2'"></contentTables>
+    <contentImages class="card m-2" v-if="activeIndex == '5-3'"></contentImages>
+    <formsOverview class="card m-2" v-if="activeIndex == '6-1'"></formsOverview>
+    <components class="card m-2" v-if="activeIndex == '7'"></components>
 </template>
 
 <script setup>
@@ -78,6 +74,11 @@ import rwdBreakPoint from "./bootstrap5/rwdBreakPoint.vue";
 import layoutContainer from "./bootstrap5/layoutContainer.vue";
 import layoutGrid from "./bootstrap5/layoutGrid.vue"
 import layoutColumns from "./bootstrap5/layoutColumns.vue"
+import contentTypography from "./bootstrap5/contentTypography.vue"
+import contentImages from "./bootstrap5/contentImages.vue"
+import contentTables from "./bootstrap5/contentTables.vue"
+import formsOverview from "./bootstrap5/formsOverview.vue"
+import components from "./bootstrap5/components.vue"
 
 const activeIndex = ref("2")
 const handleSelect = (key, keyPath) => {
