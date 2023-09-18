@@ -22,18 +22,36 @@
             <div class="row align-items-center">
                 <div class="col">
                     <div class="d-inline-flex p-2 bd-highlight">test div</div>
+                    <div>
+                        {{ userStore.username.value }}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div>
+        <el-input class="m-2" v-model="username">
+        </el-input>
+        <el-button @click="uploadUserName">upload</el-button>
+    </div>
 </template>
 
 <script setup>
-import { ref } from "vue"
+import { ref, inject } from "vue"
+
+
+const stores = inject('stores')
+
+const { userStore, cartStore } = stores
 
 const activeIndex = ref("1")
 const handleSelect = (key, keyPath) => {
     console.log(key, keyPath)
 }
 
+const username = ref('test')
+const uploadUserName = () => {
+    console.log(username.value)
+    userStore.login(username.value)
+}
 </script>
