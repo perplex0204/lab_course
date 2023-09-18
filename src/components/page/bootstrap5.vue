@@ -33,7 +33,6 @@
         <el-menu-item index="7">元件 Components</el-menu-item>
         <el-sub-menu index="8">
             <template #title>通用類別 Utilities</template>
-            <el-menu-item index="8-1">顯示 Display</el-menu-item>
             <el-menu-item index="8-2">互動 Interactions</el-menu-item>
             <el-menu-item index="8-3">透明度、溢出 Opacity/Overflow</el-menu-item>
             <el-menu-item index="8-4">Flex、垂直對齊 Flex/Vertical alignment</el-menu-item>
@@ -65,6 +64,9 @@
     <contentImages class="card m-2" v-if="activeIndex == '5-3'"></contentImages>
     <formsOverview class="card m-2" v-if="activeIndex == '6-1'"></formsOverview>
     <components class="card m-2" v-if="activeIndex == '7'"></components>
+    <utilitiesInteractions class="card m-2" v-if="activeIndex == '8-2'"></utilitiesInteractions>
+    <utilitiesOpacity class="card m-2" v-if="activeIndex == '8-3'"></utilitiesOpacity>
+    <utilitiesFlex class="card m-2" v-if="activeIndex == '8-4'"></utilitiesFlex>
 </template>
 
 <script setup>
@@ -79,6 +81,9 @@ import contentImages from "./bootstrap5/contentImages.vue"
 import contentTables from "./bootstrap5/contentTables.vue"
 import formsOverview from "./bootstrap5/formsOverview.vue"
 import components from "./bootstrap5/components.vue"
+import utilitiesInteractions from "./bootstrap5/utilitiesInteractions.vue"
+import utilitiesOpacity from "./bootstrap5/utilitiesOpacity.vue"
+import utilitiesFlex from "./bootstrap5/utilitiesFlex.vue"
 
 const activeIndex = ref("2")
 const handleSelect = (key, keyPath) => {

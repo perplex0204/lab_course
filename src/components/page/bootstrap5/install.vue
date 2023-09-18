@@ -9,13 +9,9 @@
             </div>
             <pre class="m-0">
                 <code>
-&lt;head&gt;
-  &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0&quot; crossorigin=&quot;anonymous&quot;/&gt;
-&lt;/head&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU&quot; crossorigin=&quot;anonymous&quot;&gt;
 
-&lt;body&gt;
-  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
                 </code>
             </pre>
         </div>
